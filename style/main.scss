@@ -1,15 +1,19 @@
 $colorMain: #3D5278;
 $colorAccent: #3563E9;
 $colorLight: #90A3BF;
+$colorFooter: #131313;
 
 @mixin title {
     font-size: 2.3rem;
     font-weight: bold;
+    text-transform: uppercase;
+    color: $colorAccent;
+    letter-spacing: 1px;
 }
 @mixin title-elements {
     color: $colorLight;
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 @mixin title-h5 {
     font-size: 1.4rem;
@@ -20,11 +24,17 @@ $colorLight: #90A3BF;
     border-radius: 10px;
 }
 @mixin border($property) {
-    #{$property}: 1px solid #C3D4E9;
+    #{$property}: 1px solid rgba(#C3D4E9, .4);
 }
 @mixin flex-space-between {
     display: flex;
     justify-content: space-between;
+}
+@mixin footer-txt {
+    color: rgba($colorFooter, .6);
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 2;
 }
 
 html {
@@ -45,23 +55,20 @@ body {
 .header {
     padding: 40px 0;
     @include border(border-bottom);
-
+    
     .header__content {
         @include flex-space-between;
-
+        
         // *** header primary wrap *** //
         .header__primary-wrap {
             display: flex;
-
+            
             // *** header logo *** //
             .header__logo-wrap {
                 margin: 0 65px 0 30px;
-        
+                
                 .header__logo {
                     @include title;
-                    text-transform: uppercase;
-                    color: $colorAccent;
-                    letter-spacing: 1px;
                 }
             }
         
@@ -71,7 +78,7 @@ body {
             }
             .form-control::placeholder {
                 color: $colorMain;
-                font-weight: bold;
+                font-weight: 500;
             }
             .header__input, .header__input-icon, .header__input-button {
                 @include border(border);
@@ -143,18 +150,20 @@ body {
                 text-transform: uppercase;
                 font-size: .9rem;
                 color: #94A7CB;
+                font-weight: 600;
+                letter-spacing: 2px;
             }
             .aside__title, .aside__check {
                 margin-bottom: 30px;
             }
             .aside__check {
                 font-size: 1.4rem;
-                font-weight: bold;
+                font-weight: 600;
                 color: $colorMain;
         
                 .check__span {
                     color: $colorLight;
-                    font-weight: normal;
+                    font-weight: 500;
                 }
                 .form-check-input:checked {
                     background-color: $colorAccent;
@@ -183,6 +192,11 @@ body {
                     cursor: pointer;
                     outline: 4px solid #fff;
                     border-radius: 50%;
+                    transition: all 200ms ease-out;
+                    
+                    &:active {
+                        outline: 4px solid #e5f0f3;
+                    }
                 }
                 &::-moz-range-thumb {
                     width: 20px;
@@ -191,6 +205,11 @@ body {
                     cursor: pointer;
                     outline: 4px solid #fff;
                     border-radius: 50%;
+                    transition: all 200ms ease-out;
+
+                    &:active {
+                        outline: 4px solid #e5f0f3;
+                    }
                 }
             }
         }
@@ -213,13 +232,15 @@ body {
                 }
                 .content__price-dscr, .content__price-old {
                     @include title-elements;
+                    font-weight: bold;
                     font-size: 1rem;
                 }
             }
             .content__button {
                 background-color: $colorAccent;
                 padding: 10px 20px;
-                font-weight: bold;
+                font-weight: 600;
+                font-size: 1.1rem;
             }
         }
         
@@ -313,6 +334,8 @@ body {
                         color: $colorMain;
                         padding-left: 5px;
                         vertical-align: middle;
+                        text-decoration: none;
+                        font-weight: 500;
                     }
                 }
                 .content-detail__like {
@@ -343,7 +366,7 @@ body {
                             }
                             .detail__spesification-type {
                                 color: $colorMain;
-                                font-weight: bold;
+                                font-weight: 600;
                             }
                         }
                     }
@@ -354,13 +377,14 @@ body {
                 .detail__price {
                     font-weight: bold;
                     font-size: 2rem;
-                    line-height: 1.4;
+                    line-height: 1.5;
                 }
                 .detail__price-dscr, .detail__price-old {
                     @include title-elements;
                 }
                 .gallery__button {
                     padding: 15px 32px;
+                    font-weight: bold;
                 }
             }
         }
@@ -373,8 +397,8 @@ body {
             grid-row: 2 / 3;
 
             .content__reviews-title {
-                font-size: 1.4rem;
-                font-weight: bold;
+                @include title-h5;
+                font-weight: 600;
                 margin-bottom: 30px;
 
                 .reviews__badge {
@@ -410,11 +434,13 @@ body {
                         .content__review-user-position {
                             color: $colorLight;
                             display: block;
+                            font-weight: 500;
                         }
                     }
                     .content__review-stats-wrap {
                         .content__review-stats-date {
                             color: $colorLight;
+                            font-weight: 500;
                             display: block;
                             text-align: end;
                             margin-bottom: 8px;
@@ -431,11 +457,12 @@ body {
                 width: 150px;
                 margin: 0 auto;
                 @include title-elements;
-            }
-            .accordion-button::after {
-                margin-left: 10px;
-                content: "";
-                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2390A3BF'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+
+                &::after {
+                    margin-left: 10px;
+                    content: "";
+                    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2390A3BF'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+                }
             }
         }
         // *** content catalogue *** //
@@ -455,8 +482,7 @@ body {
                 }
                 .content__catalogue-main-btn {
                     border: none;
-                    font-size: 1.2rem;
-                    font-weight: bold;
+                    @include title-elements;
                     color: $colorAccent;
                     background-color: transparent;
                 }
@@ -485,6 +511,7 @@ body {
                                 color: $colorLight;
                             }
                             .content__catalogue-item-like {
+                                cursor: pointer;
                                 position: absolute;
                                 top: 0;
                                 right: 0;
@@ -499,15 +526,18 @@ body {
                             }
                         }
                     }
-                    .content__catalogue-item-specification-wrap {
-                        margin-bottom: 35px;
-                        @include flex-space-between;
-
-                        .catalogue-item-specification__element-wrap {
-                            .catalogue-item-specification__element {
-                                color: $colorLight;
-                                margin-left: 5px;
-                                vertical-align: middle;
+                    .content__catalogue-item-secondary-wrap {
+                        .content__catalogue-item-specification-wrap {
+                            margin-bottom: 35px;
+                            @include flex-space-between;
+    
+                            .catalogue-item-specification__element-wrap {
+                                .catalogue-item-specification__element {
+                                    color: $colorLight;
+                                    margin-left: 5px;
+                                    vertical-align: middle;
+                                    font-weight: 500;
+                                }
                             }
                         }
                     }
@@ -523,6 +553,61 @@ body {
                 .content__catalogue-title-recomendation {
                     color: $colorAccent;
                 }
+            }
+        }
+    }
+}
+// *** footer *** ///
+.footer {
+    padding: 60px 30px;
+
+    // *** footer primary wrap *** //
+    .footer__primary-wrap {
+        @include flex-space-between;
+        padding-bottom: 60px;
+        border-bottom: 1px solid rgba($colorFooter, .2);
+
+        .footer__primary-wrap_heading-wrap {
+            .footer__heading {
+                @include title;
+                line-height: 1;
+            }
+            .footer__heading_dscr {
+                margin-top: 15px;
+                @include footer-txt;
+            }
+        }
+        .footer__primary-wrap_contacts-wrap {
+            display: flex;
+
+            .footer__contacts_wrap {
+                margin-right: 60px;
+
+                .footer__contacts_title {
+                    @include title-h5;
+                    font-weight: 600;
+                    margin-bottom: 25px;
+                }
+                .footer__contacts_links-wrap {
+                    .footer__contacts_link {
+                        display: block;
+                        @include footer-txt;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    // *** footer secondary wrap *** //
+    .footer__secondary-wrap {
+        @include flex-space-between;
+        @include footer-txt;
+        color: $colorFooter;
+        margin-top: 50px;
+
+        .footer__secondary-wrap_secondary-item {
+            &:first-child {
+                margin-right: 60px;
             }
         }
     }

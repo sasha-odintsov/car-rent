@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/main.css">
 </head>
 <body>
@@ -215,9 +215,9 @@
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16664 2.65862C9.2242 2.47609 9.33846 2.31666 9.49281 2.20349C9.64717 2.09031 9.83358 2.0293 10.025 2.0293C10.2164 2.0293 10.4028 2.09031 10.5571 2.20349C10.7115 2.31666 10.8257 2.47609 10.8833 2.65862L12.4333 7.42529H17.4333C17.6315 7.41779 17.8268 7.47541 17.9892 7.58932C18.1516 7.70324 18.2723 7.86719 18.3327 8.05614C18.3932 8.24508 18.3902 8.44862 18.324 8.63567C18.2579 8.82271 18.1324 8.98297 17.9666 9.09196L13.9083 12.0336L15.4583 16.8086C15.5196 16.9905 15.5212 17.1872 15.4627 17.3701C15.4043 17.5529 15.2889 17.7122 15.1335 17.8249C14.9781 17.9375 14.7907 17.9975 14.5988 17.996C14.4068 17.9946 14.2204 17.9319 14.0666 17.817L9.99998 14.842L5.94164 17.792C5.7879 17.9069 5.60145 17.9696 5.40951 17.971C5.21758 17.9725 5.03022 17.9125 4.87479 17.7999C4.71936 17.6872 4.604 17.5279 4.54557 17.3451C4.48713 17.1622 4.48868 16.9655 4.54998 16.7836L6.09998 12.0086L2.04164 9.06696C1.87588 8.95797 1.75035 8.79771 1.68424 8.61067C1.61813 8.42363 1.61508 8.22008 1.67554 8.03114C1.736 7.84219 1.85666 7.67824 2.01907 7.56432C2.18149 7.45041 2.37673 7.39279 2.57498 7.40029H7.57498L9.16664 2.65862Z" stroke="#C3D4E9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>                                                                                   
                                     </span>
-                                    <span class="content-detail__reviews">
+                                    <a href="#reviews" class="content-detail__reviews">
                                         440+ Reviewer
-                                    </span>
+                                    </a>
                                     <svg class="content-detail__like" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M16.44 3.09961C14.63 3.09961 13.01 3.97961 12 5.32961C10.99 3.97961 9.37 3.09961 7.56 3.09961C4.49 3.09961 2 5.59961 2 8.68961C2 9.87961 2.19 10.9796 2.52 11.9996C4.1 16.9996 8.97 19.9896 11.38 20.8096C11.72 20.9296 12.28 20.9296 12.62 20.8096C15.03 19.9896 19.9 16.9996 21.48 11.9996C21.81 10.9796 22 9.87961 22 8.68961C22 5.59961 19.51 3.09961 16.44 3.09961Z" fill="#ED3F3F"/>
                                     </svg>                                        
@@ -282,6 +282,7 @@
                     </section>
                     <!-- content reviews -->
                     <section class="content__reviews-wrap">
+                        <a id="reviews"></a>
                         <h4 class="content__reviews-title">
                             Reviews
                             <span class="badge reviews__badge">13</span>
@@ -375,13 +376,9 @@
                         <!-- content reviews button -->
                         <div class="accordion accordion-flush" id="show-more-users">
                             <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingOne">
-                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                    Show All
-                                  </button>
-                                </h2>
                                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#show-more-users">
                                     <div class="accordion-body px-0">
+                                        <!-- user 3 hidden -->
                                         <div class="content__review">
                                             <div class="content__review-img-wrap">
                                                 <img src="./img/user.png" alt="user" class="content__review-img">
@@ -426,6 +423,11 @@
                                         </div>
                                     </div>
                                 </div>
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    Show All
+                                  </button>
+                                </h2>
                             </div>
                         </div>
                     </section>
@@ -869,6 +871,73 @@
                 </div>
             </section>
         </div>
+        <!-- footer -->
+        <footer class="footer wrapper-content">
+            <!-- footer primary wrap -->
+            <div class="footer__primary-wrap">
+                <div class="footer__primary-wrap_heading-wrap">
+                    <span class="footer__heading">
+                        morent
+                    </span>
+                    <p class="footer__heading_dscr">
+                        Our vision is to provide convenience 
+                        <br>
+                        and help increase your sales business.
+                    </p>
+                </div>
+                <div class="footer__primary-wrap_contacts-wrap">
+                    <div class="footer__contacts_wrap">
+                        <h5 class="footer__contacts_title">
+                            About
+                        </h5>
+                        <div class="footer__contacts_links-wrap">
+                            <a href="#" class="footer__contacts_link">How it works</a>
+                            <a href="#" class="footer__contacts_link">Featured</a>
+                            <a href="#" class="footer__contacts_link">Partnership</a>
+                            <a href="#" class="footer__contacts_link">Bussiness Relation</a>
+                        </div>
+                    </div>
+                    <div class="footer__contacts_wrap">
+                        <h5 class="footer__contacts_title">
+                            Community
+                        </h5>
+                        <div class="footer__contacts_links-wrap">
+                            <a href="#" class="footer__contacts_link">Events</a>
+                            <a href="#" class="footer__contacts_link">Blog</a>
+                            <a href="#" class="footer__contacts_link">Podcast</a>
+                            <a href="#" class="footer__contacts_link">Invite a friend</a>
+                        </div>
+                    </div>
+                    <div class="footer__contacts_wrap">
+                        <h5 class="footer__contacts_title">
+                            Socials
+                        </h5>
+                        <div class="footer__contacts_links-wrap">
+                            <a href="#" class="footer__contacts_link">Discord</a>
+                            <a href="#" class="footer__contacts_link">Instagram</a>
+                            <a href="#" class="footer__contacts_link">Twitter</a>
+                            <a href="#" class="footer__contacts_link">Facebook</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer secondary wrap -->
+            <div class="footer__secondary-wrap">
+                <div class="footer__secondary-wrap_primary-items-wrap">
+                    <span class="footer__secondary-wrap_primary-item">
+                        &copy;2022 MORENT. All rights reserved
+                    </span>
+                </div>
+                <div class="footer__secondary-wrap_secondary-items-wrap">
+                    <span class="footer__secondary-wrap_secondary-item">
+                        Privacy & Policy
+                    </span>
+                    <span class="footer__secondary-wrap_secondary-item">
+                        Terms & Condition
+                    </span>
+                </div>
+            </div>
+        </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="./js/main.js">
