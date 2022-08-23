@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Car rent website"/>
     <title>MORENT</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +18,38 @@
         <header class="header">
             <div class="header__content wrapper-content">
                 <!-- header primary wrap -->
-                <div class="header__primary-wrap">
+                <nav class="navbar navbar-expand-lg p-0">
+                    <div class="container-fluid header__primary-wrap">
+                        <a href="#" class="header__user-img-wrap">
+                            <img src="./img/user.png" alt="user" class="header__user-img">
+                        </a>
+                        <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#header-settings" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- header user settings -->
+                        <div class="collapse navbar-collapse" id="header-settings">
+                            <div class="header__user-settings">
+                                <button class="header__user-settings-btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.44 3.09961C14.63 3.09961 13.01 3.97961 12 5.32961C10.99 3.97961 9.37 3.09961 7.56 3.09961C4.49 3.09961 2 5.59961 2 8.68961C2 9.87961 2.19 10.9796 2.52 11.9996C4.1 16.9996 8.97 19.9896 11.38 20.8096C11.72 20.9296 12.28 20.9296 12.62 20.8096C15.03 19.9896 19.9 16.9996 21.48 11.9996C21.81 10.9796 22 9.87961 22 8.68961C22 5.59961 19.51 3.09961 16.44 3.09961Z" fill="#3D5278"/>
+                                    </svg>                                                              
+                                </button>
+                                <button class="header__user-settings-btn user-settings-btn-notification">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.3399 14.49L18.3399 12.83C18.1299 12.46 17.9399 11.76 17.9399 11.35V8.82C17.9399 6.47 16.5599 4.44 14.5699 3.49C14.0499 2.57 13.0899 2 11.9899 2C10.8999 2 9.91994 2.59 9.39994 3.52C7.44994 4.49 6.09994 6.5 6.09994 8.82V11.35C6.09994 11.76 5.90994 12.46 5.69994 12.82L4.68994 14.49C4.28994 15.16 4.19994 15.9 4.44994 16.58C4.68994 17.25 5.25994 17.77 5.99994 18.02C7.93994 18.68 9.97994 19 12.0199 19C14.0599 19 16.0999 18.68 18.0399 18.03C18.7399 17.8 19.2799 17.27 19.5399 16.58C19.7999 15.89 19.7299 15.13 19.3399 14.49Z" fill="#3D5278"/>
+                                        <path d="M14.8299 20.01C14.4099 21.17 13.2999 22 11.9999 22C11.2099 22 10.4299 21.68 9.87993 21.11C9.55993 20.81 9.31993 20.41 9.17993 20C9.30993 20.02 9.43993 20.03 9.57993 20.05C9.80993 20.08 10.0499 20.11 10.2899 20.13C10.8599 20.18 11.4399 20.21 12.0199 20.21C12.5899 20.21 13.1599 20.18 13.7199 20.13C13.9299 20.11 14.1399 20.1 14.3399 20.07C14.4999 20.05 14.6599 20.03 14.8299 20.01Z" fill="#3D5278"/>
+                                    </svg>                                
+                                </button>
+                                <button class="header__user-settings-btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.1 9.22043C18.29 9.22043 17.55 7.94042 18.45 6.37042C18.97 5.46042 18.66 4.30042 17.75 3.78042L16.02 2.79042C15.23 2.32042 14.21 2.60042 13.74 3.39042L13.63 3.58042C12.73 5.15042 11.25 5.15042 10.34 3.58042L10.23 3.39042C9.78 2.60042 8.76 2.32042 7.97 2.79042L6.24 3.78042C5.33 4.30042 5.02 5.47042 5.54 6.38042C6.45 7.94042 5.71 9.22043 3.9 9.22043C2.86 9.22043 2 10.0704 2 11.1204V12.8804C2 13.9204 2.85 14.7804 3.9 14.7804C5.71 14.7804 6.45 16.0604 5.54 17.6304C5.02 18.5404 5.33 19.7004 6.24 20.2204L7.97 21.2104C8.76 21.6804 9.78 21.4004 10.25 20.6104L10.36 20.4204C11.26 18.8504 12.74 18.8504 13.65 20.4204L13.76 20.6104C14.23 21.4004 15.25 21.6804 16.04 21.2104L17.77 20.2204C18.68 19.7004 18.99 18.5304 18.47 17.6304C17.56 16.0604 18.3 14.7804 20.11 14.7804C21.15 14.7804 22.01 13.9304 22.01 12.8804V11.1204C22 10.0804 21.15 9.22043 20.1 9.22043ZM12 15.2504C10.21 15.2504 8.75 13.7904 8.75 12.0004C8.75 10.2104 10.21 8.75042 12 8.75042C13.79 8.75042 15.25 10.2104 15.25 12.0004C15.25 13.7904 13.79 15.2504 12 15.2504Z" fill="#3D5278"/>
+                                    </svg>                                
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="header__secondary-wrap">
                     <!-- header logo -->
                     <div class="header__logo-wrap">
                         <span class="header__logo">
@@ -32,8 +64,8 @@
                               <path d="M22 22L20 20" stroke="#3D5278" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>                            
                         </span>
-                        <input type="search" class="form-control border-start-0 border-end-0 header__input" placeholder="Search something here" aria-label="Search something here" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-primary header__input-button border-start-0" type="button" id="button-addon2">
+                        <input type="search" class="form-control header__input" placeholder="Search something here" aria-label="Search something here" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-primary header__input-button" type="button" id="button-addon2" data-bs-toggle="offcanvas" data-bs-target="#sidebar-check" aria-controls="sidebar-check">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path class="header__input-button-icon" d="M22 6.5H16" stroke="#3D5278" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path class="header__input-button-icon" d="M6 6.5H2" stroke="#3D5278" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -45,116 +77,96 @@
                         </button>
                     </div>
                 </div>
-                <div class="header__secondary-wrap">
-                    <!-- header user settings -->
-                    <div class="header__user-settings">
-                        <button class="header__user-settings-btn">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M16.44 3.09961C14.63 3.09961 13.01 3.97961 12 5.32961C10.99 3.97961 9.37 3.09961 7.56 3.09961C4.49 3.09961 2 5.59961 2 8.68961C2 9.87961 2.19 10.9796 2.52 11.9996C4.1 16.9996 8.97 19.9896 11.38 20.8096C11.72 20.9296 12.28 20.9296 12.62 20.8096C15.03 19.9896 19.9 16.9996 21.48 11.9996C21.81 10.9796 22 9.87961 22 8.68961C22 5.59961 19.51 3.09961 16.44 3.09961Z" fill="#3D5278"/>
-                            </svg>                                                              
-                        </button>
-                        <button class="header__user-settings-btn user-settings-btn-notification">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M19.3399 14.49L18.3399 12.83C18.1299 12.46 17.9399 11.76 17.9399 11.35V8.82C17.9399 6.47 16.5599 4.44 14.5699 3.49C14.0499 2.57 13.0899 2 11.9899 2C10.8999 2 9.91994 2.59 9.39994 3.52C7.44994 4.49 6.09994 6.5 6.09994 8.82V11.35C6.09994 11.76 5.90994 12.46 5.69994 12.82L4.68994 14.49C4.28994 15.16 4.19994 15.9 4.44994 16.58C4.68994 17.25 5.25994 17.77 5.99994 18.02C7.93994 18.68 9.97994 19 12.0199 19C14.0599 19 16.0999 18.68 18.0399 18.03C18.7399 17.8 19.2799 17.27 19.5399 16.58C19.7999 15.89 19.7299 15.13 19.3399 14.49Z" fill="#3D5278"/>
-                                <path d="M14.8299 20.01C14.4099 21.17 13.2999 22 11.9999 22C11.2099 22 10.4299 21.68 9.87993 21.11C9.55993 20.81 9.31993 20.41 9.17993 20C9.30993 20.02 9.43993 20.03 9.57993 20.05C9.80993 20.08 10.0499 20.11 10.2899 20.13C10.8599 20.18 11.4399 20.21 12.0199 20.21C12.5899 20.21 13.1599 20.18 13.7199 20.13C13.9299 20.11 14.1399 20.1 14.3399 20.07C14.4999 20.05 14.6599 20.03 14.8299 20.01Z" fill="#3D5278"/>
-                            </svg>                                
-                        </button>
-                        <button class="header__user-settings-btn">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M20.1 9.22043C18.29 9.22043 17.55 7.94042 18.45 6.37042C18.97 5.46042 18.66 4.30042 17.75 3.78042L16.02 2.79042C15.23 2.32042 14.21 2.60042 13.74 3.39042L13.63 3.58042C12.73 5.15042 11.25 5.15042 10.34 3.58042L10.23 3.39042C9.78 2.60042 8.76 2.32042 7.97 2.79042L6.24 3.78042C5.33 4.30042 5.02 5.47042 5.54 6.38042C6.45 7.94042 5.71 9.22043 3.9 9.22043C2.86 9.22043 2 10.0704 2 11.1204V12.8804C2 13.9204 2.85 14.7804 3.9 14.7804C5.71 14.7804 6.45 16.0604 5.54 17.6304C5.02 18.5404 5.33 19.7004 6.24 20.2204L7.97 21.2104C8.76 21.6804 9.78 21.4004 10.25 20.6104L10.36 20.4204C11.26 18.8504 12.74 18.8504 13.65 20.4204L13.76 20.6104C14.23 21.4004 15.25 21.6804 16.04 21.2104L17.77 20.2204C18.68 19.7004 18.99 18.5304 18.47 17.6304C17.56 16.0604 18.3 14.7804 20.11 14.7804C21.15 14.7804 22.01 13.9304 22.01 12.8804V11.1204C22 10.0804 21.15 9.22043 20.1 9.22043ZM12 15.2504C10.21 15.2504 8.75 13.7904 8.75 12.0004C8.75 10.2104 10.21 8.75042 12 8.75042C13.79 8.75042 15.25 10.2104 15.25 12.0004C15.25 13.7904 13.79 15.2504 12 15.2504Z" fill="#3D5278"/>
-                            </svg>                                
-                        </button>
-                    </div>
-                  <div class="header__user-img-wrap">
-                    <img src="./img/user.png" alt="user" class="header__user-img">
-                  </div>
-                </div>
             </div>
         </header>
         <!-- main -->
         <div class="main">
-            <!-- sidebox -->
-            <aside class="aside">
-                <div class="aside__wrap">
-                    <h3 class="aside__title">
-                        type
-                    </h3>
-                    <div class="aside__check">
-                        <input class="form-check-input" type="checkbox" id="checkbox-sport" checked>
-                        <label class="form-check-label px-1" for="checkbox-sport">
-                          Sport <span class="check__span">(10)</span>
-                        </label>
-                    </div>
-                    <div class="aside__check">
-                        <input class="form-check-input" type="checkbox" id="checkbox-suv" checked>
-                        <label class="form-check-label px-1" for="checkbox-suv">
-                          SUV <span class="check__span">(12)</span>
-                        </label>
-                    </div>
-                    <div class="aside__check">
-                        <input class="form-check-input" type="checkbox" id="checkbox-mpv">
-                        <label class="form-check-label  px-1" for="checkbox-mpv">
-                          MPV <span class="check__span">(16)</span>
-                        </label>
-                    </div>
-                    <div class="aside__check">
-                        <input class="form-check-input" type="checkbox" id="checkbox-sedan">
-                        <label class="form-check-label px-1" for="checkbox-sedan">
-                          Sedan <span class="check__span">(20)</span>
-                        </label>
-                    </div>
-                    <div class="aside__check">
-                        <input class="form-check-input" type="checkbox" id="checkbox-coupe">
-                        <label class="form-check-label px-1" for="checkbox-coupe">
-                          Coupe <span class="check__span">(14)</span>
-                        </label>
-                    </div>
-                    <div class="aside__check">
-                        <input class="form-check-input" type="checkbox" id="checkbox-hatchback">
-                        <label class="form-check-label px-1" for="checkbox-hatchback">
-                          Hatchback <span class="check__span">(14)</span>
-                        </label>
-                    </div>
-                </div>
-                <div class="aside__wrap">
-                    <h3 class="aside__title">
-                        capacity
-                    </h3>
-                    <div class="aside__check">
-                        <input class="form-check-input" type="checkbox" id="checkbox-two-person" checked>
-                        <label class="form-check-label px-1" for="checkbox-two-person">
-                            2 Person <span class="check__span">(10)</span>
-                        </label>
-                    </div>
-                    <div class="aside__check">
-                        <input class="form-check-input" type="checkbox" id="checkbox-four-person">
-                        <label class="form-check-label px-1" for="checkbox-four-person">
-                            4 Person <span class="check__span">(14)</span>
-                        </label>
-                    </div>
-                    <div class="aside__check">
-                        <input class="form-check-input" type="checkbox" id="checkbox-six-person">
-                        <label class="form-check-label px-1" for="checkbox-six-person">
-                            6 Person <span class="check__span">(12)</span>
-                        </label>
-                    </div>
-                    <div class="aside__check">
-                        <input class="form-check-input" type="checkbox" id="checkbox-eight-person" checked>
-                        <label class="form-check-label px-1" for="checkbox-eight-person">
-                            8 or More <span class="check__span">(16)</span>
-                        </label>
-                    </div>
-                </div>
-                <div class="aside__wrap">
-                    <h3 class="aside__title">
-                        price
-                    </h3>
-                    <input type="range" id="price-range" value="100" min="0" max="130">
-                    <label for="price-range" class="form-label aside__check">Max. <span id="price-range-sum">$100.00</span></label>
-                </div>
+            <!-- sidebar -->
+            <aside class="aside offcanvas-xl offcanvas-start" data-bs-scroll="true" tabindex="-1" id="sidebar-check" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Choose something here</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#sidebar-check"></button>
+                  </div>
+                  <div class="offcanvas-body d-block">
+                      <div class="aside__wrap">
+                          <h3 class="aside__title">
+                              type
+                          </h3>
+                          <div class="aside__check">
+                              <input class="form-check-input" type="checkbox" id="checkbox-sport" checked>
+                              <label class="form-check-label px-1" for="checkbox-sport">
+                                Sport <span class="check__span">(10)</span>
+                              </label>
+                          </div>
+                          <div class="aside__check">
+                              <input class="form-check-input" type="checkbox" id="checkbox-suv" checked>
+                              <label class="form-check-label px-1" for="checkbox-suv">
+                                SUV <span class="check__span">(12)</span>
+                              </label>
+                          </div>
+                          <div class="aside__check">
+                              <input class="form-check-input" type="checkbox" id="checkbox-mpv">
+                              <label class="form-check-label  px-1" for="checkbox-mpv">
+                                MPV <span class="check__span">(16)</span>
+                              </label>
+                          </div>
+                          <div class="aside__check">
+                              <input class="form-check-input" type="checkbox" id="checkbox-sedan">
+                              <label class="form-check-label px-1" for="checkbox-sedan">
+                                Sedan <span class="check__span">(20)</span>
+                              </label>
+                          </div>
+                          <div class="aside__check">
+                              <input class="form-check-input" type="checkbox" id="checkbox-coupe">
+                              <label class="form-check-label px-1" for="checkbox-coupe">
+                                Coupe <span class="check__span">(14)</span>
+                              </label>
+                          </div>
+                          <div class="aside__check">
+                              <input class="form-check-input" type="checkbox" id="checkbox-hatchback">
+                              <label class="form-check-label px-1" for="checkbox-hatchback">
+                                Hatchback <span class="check__span">(14)</span>
+                              </label>
+                          </div>
+                      </div>
+                      <div class="aside__wrap">
+                          <h3 class="aside__title">
+                              capacity
+                          </h3>
+                          <div class="aside__check">
+                              <input class="form-check-input" type="checkbox" id="checkbox-two-person" checked>
+                              <label class="form-check-label px-1" for="checkbox-two-person">
+                                  2 Person <span class="check__span">(10)</span>
+                              </label>
+                          </div>
+                          <div class="aside__check">
+                              <input class="form-check-input" type="checkbox" id="checkbox-four-person">
+                              <label class="form-check-label px-1" for="checkbox-four-person">
+                                  4 Person <span class="check__span">(14)</span>
+                              </label>
+                          </div>
+                          <div class="aside__check">
+                              <input class="form-check-input" type="checkbox" id="checkbox-six-person">
+                              <label class="form-check-label px-1" for="checkbox-six-person">
+                                  6 Person <span class="check__span">(12)</span>
+                              </label>
+                          </div>
+                          <div class="aside__check">
+                              <input class="form-check-input" type="checkbox" id="checkbox-eight-person" checked>
+                              <label class="form-check-label px-1" for="checkbox-eight-person">
+                                  8 or More <span class="check__span">(16)</span>
+                              </label>
+                          </div>
+                      </div>
+                      <div class="aside__wrap">
+                          <h3 class="aside__title">
+                              price
+                          </h3>
+                          <input type="range" id="price-range" value="100" min="0" max="130">
+                          <label for="price-range" class="form-label aside__check">Max. <span id="price-range-sum">$100.00</span></label>
+                      </div>
+                  </div>
             </aside>
-            <div class="">
-            </div>
             <!-- content -->
             <section class="content">
                 <div class="wrapper-content content__wrap">
@@ -199,19 +211,19 @@
                                 </h3>
                                 <div class="content-detail__reviews-wrap">
                                     <span class="content__rating">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="content__rating-star" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16664 2.65862C9.22421 2.47609 9.33846 2.31666 9.49281 2.20349C9.64717 2.09031 9.83358 2.0293 10.025 2.0293C10.2164 2.0293 10.4028 2.09031 10.5571 2.20349C10.7115 2.31666 10.8257 2.47609 10.8833 2.65862L12.4333 7.42529H17.4333C17.6315 7.41779 17.8268 7.47541 17.9892 7.58932C18.1516 7.70324 18.2723 7.86719 18.3327 8.05614C18.3932 8.24508 18.3902 8.44862 18.324 8.63567C18.2579 8.82271 18.1324 8.98297 17.9666 9.09196L13.9083 12.0336L15.4583 16.8086C15.5196 16.9905 15.5212 17.1872 15.4627 17.3701C15.4043 17.5529 15.2889 17.7122 15.1335 17.8249C14.9781 17.9375 14.7907 17.9975 14.5988 17.996C14.4068 17.9946 14.2204 17.9319 14.0666 17.817L9.99998 14.842L5.94164 17.792C5.7879 17.9069 5.60145 17.9696 5.40951 17.971C5.21758 17.9725 5.03022 17.9125 4.87479 17.7999C4.71936 17.6872 4.604 17.5279 4.54557 17.3451C4.48713 17.1622 4.48868 16.9655 4.54998 16.7836L6.09998 12.0086L2.04164 9.06696C1.87588 8.95797 1.75035 8.79771 1.68424 8.61067C1.61813 8.42362 1.61508 8.22008 1.67554 8.03114C1.736 7.84219 1.85666 7.67824 2.01907 7.56432C2.18149 7.45041 2.37673 7.39279 2.57498 7.40029H7.57498L9.16664 2.65862Z" fill="#FBAD39"/>
                                         </svg>                                            
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="content__rating-star" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16664 2.65862C9.22421 2.47609 9.33846 2.31666 9.49281 2.20349C9.64717 2.09031 9.83358 2.0293 10.025 2.0293C10.2164 2.0293 10.4028 2.09031 10.5571 2.20349C10.7115 2.31666 10.8257 2.47609 10.8833 2.65862L12.4333 7.42529H17.4333C17.6315 7.41779 17.8268 7.47541 17.9892 7.58932C18.1516 7.70324 18.2723 7.86719 18.3327 8.05614C18.3932 8.24508 18.3902 8.44862 18.324 8.63567C18.2579 8.82271 18.1324 8.98297 17.9666 9.09196L13.9083 12.0336L15.4583 16.8086C15.5196 16.9905 15.5212 17.1872 15.4627 17.3701C15.4043 17.5529 15.2889 17.7122 15.1335 17.8249C14.9781 17.9375 14.7907 17.9975 14.5988 17.996C14.4068 17.9946 14.2204 17.9319 14.0666 17.817L9.99998 14.842L5.94164 17.792C5.7879 17.9069 5.60145 17.9696 5.40951 17.971C5.21758 17.9725 5.03022 17.9125 4.87479 17.7999C4.71936 17.6872 4.604 17.5279 4.54557 17.3451C4.48713 17.1622 4.48868 16.9655 4.54998 16.7836L6.09998 12.0086L2.04164 9.06696C1.87588 8.95797 1.75035 8.79771 1.68424 8.61067C1.61813 8.42362 1.61508 8.22008 1.67554 8.03114C1.736 7.84219 1.85666 7.67824 2.01907 7.56432C2.18149 7.45041 2.37673 7.39279 2.57498 7.40029H7.57498L9.16664 2.65862Z" fill="#FBAD39"/>
                                         </svg>                                            
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="content__rating-star" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16664 2.65862C9.22421 2.47609 9.33846 2.31666 9.49281 2.20349C9.64717 2.09031 9.83358 2.0293 10.025 2.0293C10.2164 2.0293 10.4028 2.09031 10.5571 2.20349C10.7115 2.31666 10.8257 2.47609 10.8833 2.65862L12.4333 7.42529H17.4333C17.6315 7.41779 17.8268 7.47541 17.9892 7.58932C18.1516 7.70324 18.2723 7.86719 18.3327 8.05614C18.3932 8.24508 18.3902 8.44862 18.324 8.63567C18.2579 8.82271 18.1324 8.98297 17.9666 9.09196L13.9083 12.0336L15.4583 16.8086C15.5196 16.9905 15.5212 17.1872 15.4627 17.3701C15.4043 17.5529 15.2889 17.7122 15.1335 17.8249C14.9781 17.9375 14.7907 17.9975 14.5988 17.996C14.4068 17.9946 14.2204 17.9319 14.0666 17.817L9.99998 14.842L5.94164 17.792C5.7879 17.9069 5.60145 17.9696 5.40951 17.971C5.21758 17.9725 5.03022 17.9125 4.87479 17.7999C4.71936 17.6872 4.604 17.5279 4.54557 17.3451C4.48713 17.1622 4.48868 16.9655 4.54998 16.7836L6.09998 12.0086L2.04164 9.06696C1.87588 8.95797 1.75035 8.79771 1.68424 8.61067C1.61813 8.42362 1.61508 8.22008 1.67554 8.03114C1.736 7.84219 1.85666 7.67824 2.01907 7.56432C2.18149 7.45041 2.37673 7.39279 2.57498 7.40029H7.57498L9.16664 2.65862Z" fill="#FBAD39"/>
                                         </svg>                                            
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="content__rating-star" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16664 2.65862C9.22421 2.47609 9.33846 2.31666 9.49281 2.20349C9.64717 2.09031 9.83358 2.0293 10.025 2.0293C10.2164 2.0293 10.4028 2.09031 10.5571 2.20349C10.7115 2.31666 10.8257 2.47609 10.8833 2.65862L12.4333 7.42529H17.4333C17.6315 7.41779 17.8268 7.47541 17.9892 7.58932C18.1516 7.70324 18.2723 7.86719 18.3327 8.05614C18.3932 8.24508 18.3902 8.44862 18.324 8.63567C18.2579 8.82271 18.1324 8.98297 17.9666 9.09196L13.9083 12.0336L15.4583 16.8086C15.5196 16.9905 15.5212 17.1872 15.4627 17.3701C15.4043 17.5529 15.2889 17.7122 15.1335 17.8249C14.9781 17.9375 14.7907 17.9975 14.5988 17.996C14.4068 17.9946 14.2204 17.9319 14.0666 17.817L9.99998 14.842L5.94164 17.792C5.7879 17.9069 5.60145 17.9696 5.40951 17.971C5.21758 17.9725 5.03022 17.9125 4.87479 17.7999C4.71936 17.6872 4.604 17.5279 4.54557 17.3451C4.48713 17.1622 4.48868 16.9655 4.54998 16.7836L6.09998 12.0086L2.04164 9.06696C1.87588 8.95797 1.75035 8.79771 1.68424 8.61067C1.61813 8.42362 1.61508 8.22008 1.67554 8.03114C1.736 7.84219 1.85666 7.67824 2.01907 7.56432C2.18149 7.45041 2.37673 7.39279 2.57498 7.40029H7.57498L9.16664 2.65862Z" fill="#FBAD39"/>
                                         </svg>     
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="content__rating-star" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16664 2.65862C9.2242 2.47609 9.33846 2.31666 9.49281 2.20349C9.64717 2.09031 9.83358 2.0293 10.025 2.0293C10.2164 2.0293 10.4028 2.09031 10.5571 2.20349C10.7115 2.31666 10.8257 2.47609 10.8833 2.65862L12.4333 7.42529H17.4333C17.6315 7.41779 17.8268 7.47541 17.9892 7.58932C18.1516 7.70324 18.2723 7.86719 18.3327 8.05614C18.3932 8.24508 18.3902 8.44862 18.324 8.63567C18.2579 8.82271 18.1324 8.98297 17.9666 9.09196L13.9083 12.0336L15.4583 16.8086C15.5196 16.9905 15.5212 17.1872 15.4627 17.3701C15.4043 17.5529 15.2889 17.7122 15.1335 17.8249C14.9781 17.9375 14.7907 17.9975 14.5988 17.996C14.4068 17.9946 14.2204 17.9319 14.0666 17.817L9.99998 14.842L5.94164 17.792C5.7879 17.9069 5.60145 17.9696 5.40951 17.971C5.21758 17.9725 5.03022 17.9125 4.87479 17.7999C4.71936 17.6872 4.604 17.5279 4.54557 17.3451C4.48713 17.1622 4.48868 16.9655 4.54998 16.7836L6.09998 12.0086L2.04164 9.06696C1.87588 8.95797 1.75035 8.79771 1.68424 8.61067C1.61813 8.42363 1.61508 8.22008 1.67554 8.03114C1.736 7.84219 1.85666 7.67824 2.01907 7.56432C2.18149 7.45041 2.37673 7.39279 2.57498 7.40029H7.57498L9.16664 2.65862Z" stroke="#C3D4E9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>                                                                                   
                                     </span>
@@ -307,24 +319,25 @@
                                             21 July 2022
                                         </span>
                                         <span class="content__rating">
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="content__rating-star" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16664 2.65862C9.22421 2.47609 9.33846 2.31666 9.49281 2.20349C9.64717 2.09031 9.83358 2.0293 10.025 2.0293C10.2164 2.0293 10.4028 2.09031 10.5571 2.20349C10.7115 2.31666 10.8257 2.47609 10.8833 2.65862L12.4333 7.42529H17.4333C17.6315 7.41779 17.8268 7.47541 17.9892 7.58932C18.1516 7.70324 18.2723 7.86719 18.3327 8.05614C18.3932 8.24508 18.3902 8.44862 18.324 8.63567C18.2579 8.82271 18.1324 8.98297 17.9666 9.09196L13.9083 12.0336L15.4583 16.8086C15.5196 16.9905 15.5212 17.1872 15.4627 17.3701C15.4043 17.5529 15.2889 17.7122 15.1335 17.8249C14.9781 17.9375 14.7907 17.9975 14.5988 17.996C14.4068 17.9946 14.2204 17.9319 14.0666 17.817L9.99998 14.842L5.94164 17.792C5.7879 17.9069 5.60145 17.9696 5.40951 17.971C5.21758 17.9725 5.03022 17.9125 4.87479 17.7999C4.71936 17.6872 4.604 17.5279 4.54557 17.3451C4.48713 17.1622 4.48868 16.9655 4.54998 16.7836L6.09998 12.0086L2.04164 9.06696C1.87588 8.95797 1.75035 8.79771 1.68424 8.61067C1.61813 8.42362 1.61508 8.22008 1.67554 8.03114C1.736 7.84219 1.85666 7.67824 2.01907 7.56432C2.18149 7.45041 2.37673 7.39279 2.57498 7.40029H7.57498L9.16664 2.65862Z" fill="#FBAD39"/>
                                             </svg>                                            
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="content__rating-star" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16664 2.65862C9.22421 2.47609 9.33846 2.31666 9.49281 2.20349C9.64717 2.09031 9.83358 2.0293 10.025 2.0293C10.2164 2.0293 10.4028 2.09031 10.5571 2.20349C10.7115 2.31666 10.8257 2.47609 10.8833 2.65862L12.4333 7.42529H17.4333C17.6315 7.41779 17.8268 7.47541 17.9892 7.58932C18.1516 7.70324 18.2723 7.86719 18.3327 8.05614C18.3932 8.24508 18.3902 8.44862 18.324 8.63567C18.2579 8.82271 18.1324 8.98297 17.9666 9.09196L13.9083 12.0336L15.4583 16.8086C15.5196 16.9905 15.5212 17.1872 15.4627 17.3701C15.4043 17.5529 15.2889 17.7122 15.1335 17.8249C14.9781 17.9375 14.7907 17.9975 14.5988 17.996C14.4068 17.9946 14.2204 17.9319 14.0666 17.817L9.99998 14.842L5.94164 17.792C5.7879 17.9069 5.60145 17.9696 5.40951 17.971C5.21758 17.9725 5.03022 17.9125 4.87479 17.7999C4.71936 17.6872 4.604 17.5279 4.54557 17.3451C4.48713 17.1622 4.48868 16.9655 4.54998 16.7836L6.09998 12.0086L2.04164 9.06696C1.87588 8.95797 1.75035 8.79771 1.68424 8.61067C1.61813 8.42362 1.61508 8.22008 1.67554 8.03114C1.736 7.84219 1.85666 7.67824 2.01907 7.56432C2.18149 7.45041 2.37673 7.39279 2.57498 7.40029H7.57498L9.16664 2.65862Z" fill="#FBAD39"/>
                                             </svg>                                            
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="content__rating-star" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16664 2.65862C9.22421 2.47609 9.33846 2.31666 9.49281 2.20349C9.64717 2.09031 9.83358 2.0293 10.025 2.0293C10.2164 2.0293 10.4028 2.09031 10.5571 2.20349C10.7115 2.31666 10.8257 2.47609 10.8833 2.65862L12.4333 7.42529H17.4333C17.6315 7.41779 17.8268 7.47541 17.9892 7.58932C18.1516 7.70324 18.2723 7.86719 18.3327 8.05614C18.3932 8.24508 18.3902 8.44862 18.324 8.63567C18.2579 8.82271 18.1324 8.98297 17.9666 9.09196L13.9083 12.0336L15.4583 16.8086C15.5196 16.9905 15.5212 17.1872 15.4627 17.3701C15.4043 17.5529 15.2889 17.7122 15.1335 17.8249C14.9781 17.9375 14.7907 17.9975 14.5988 17.996C14.4068 17.9946 14.2204 17.9319 14.0666 17.817L9.99998 14.842L5.94164 17.792C5.7879 17.9069 5.60145 17.9696 5.40951 17.971C5.21758 17.9725 5.03022 17.9125 4.87479 17.7999C4.71936 17.6872 4.604 17.5279 4.54557 17.3451C4.48713 17.1622 4.48868 16.9655 4.54998 16.7836L6.09998 12.0086L2.04164 9.06696C1.87588 8.95797 1.75035 8.79771 1.68424 8.61067C1.61813 8.42362 1.61508 8.22008 1.67554 8.03114C1.736 7.84219 1.85666 7.67824 2.01907 7.56432C2.18149 7.45041 2.37673 7.39279 2.57498 7.40029H7.57498L9.16664 2.65862Z" fill="#FBAD39"/>
                                             </svg>                                            
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="content__rating-star" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16664 2.65862C9.22421 2.47609 9.33846 2.31666 9.49281 2.20349C9.64717 2.09031 9.83358 2.0293 10.025 2.0293C10.2164 2.0293 10.4028 2.09031 10.5571 2.20349C10.7115 2.31666 10.8257 2.47609 10.8833 2.65862L12.4333 7.42529H17.4333C17.6315 7.41779 17.8268 7.47541 17.9892 7.58932C18.1516 7.70324 18.2723 7.86719 18.3327 8.05614C18.3932 8.24508 18.3902 8.44862 18.324 8.63567C18.2579 8.82271 18.1324 8.98297 17.9666 9.09196L13.9083 12.0336L15.4583 16.8086C15.5196 16.9905 15.5212 17.1872 15.4627 17.3701C15.4043 17.5529 15.2889 17.7122 15.1335 17.8249C14.9781 17.9375 14.7907 17.9975 14.5988 17.996C14.4068 17.9946 14.2204 17.9319 14.0666 17.817L9.99998 14.842L5.94164 17.792C5.7879 17.9069 5.60145 17.9696 5.40951 17.971C5.21758 17.9725 5.03022 17.9125 4.87479 17.7999C4.71936 17.6872 4.604 17.5279 4.54557 17.3451C4.48713 17.1622 4.48868 16.9655 4.54998 16.7836L6.09998 12.0086L2.04164 9.06696C1.87588 8.95797 1.75035 8.79771 1.68424 8.61067C1.61813 8.42362 1.61508 8.22008 1.67554 8.03114C1.736 7.84219 1.85666 7.67824 2.01907 7.56432C2.18149 7.45041 2.37673 7.39279 2.57498 7.40029H7.57498L9.16664 2.65862Z" fill="#FBAD39"/>
                                             </svg>     
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="content__rating-star" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16664 2.65862C9.2242 2.47609 9.33846 2.31666 9.49281 2.20349C9.64717 2.09031 9.83358 2.0293 10.025 2.0293C10.2164 2.0293 10.4028 2.09031 10.5571 2.20349C10.7115 2.31666 10.8257 2.47609 10.8833 2.65862L12.4333 7.42529H17.4333C17.6315 7.41779 17.8268 7.47541 17.9892 7.58932C18.1516 7.70324 18.2723 7.86719 18.3327 8.05614C18.3932 8.24508 18.3902 8.44862 18.324 8.63567C18.2579 8.82271 18.1324 8.98297 17.9666 9.09196L13.9083 12.0336L15.4583 16.8086C15.5196 16.9905 15.5212 17.1872 15.4627 17.3701C15.4043 17.5529 15.2889 17.7122 15.1335 17.8249C14.9781 17.9375 14.7907 17.9975 14.5988 17.996C14.4068 17.9946 14.2204 17.9319 14.0666 17.817L9.99998 14.842L5.94164 17.792C5.7879 17.9069 5.60145 17.9696 5.40951 17.971C5.21758 17.9725 5.03022 17.9125 4.87479 17.7999C4.71936 17.6872 4.604 17.5279 4.54557 17.3451C4.48713 17.1622 4.48868 16.9655 4.54998 16.7836L6.09998 12.0086L2.04164 9.06696C1.87588 8.95797 1.75035 8.79771 1.68424 8.61067C1.61813 8.42363 1.61508 8.22008 1.67554 8.03114C1.736 7.84219 1.85666 7.67824 2.01907 7.56432C2.18149 7.45041 2.37673 7.39279 2.57498 7.40029H7.57498L9.16664 2.65862Z" stroke="#C3D4E9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                             </svg>                                                                                   
                                         </span>
                                     </div>
                                 </div>
+                                <!-- <div class="content__review-dscr-wrap"></div> -->
                                 <p class="content__review-dscr">
                                     We are very happy with the service from the MORENT App. Morent has a low price and also a large variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.
                                 </p>
@@ -350,19 +363,19 @@
                                             20 July 2022
                                         </span>
                                         <span class="content__rating">
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="content__rating-star" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16664 2.65862C9.22421 2.47609 9.33846 2.31666 9.49281 2.20349C9.64717 2.09031 9.83358 2.0293 10.025 2.0293C10.2164 2.0293 10.4028 2.09031 10.5571 2.20349C10.7115 2.31666 10.8257 2.47609 10.8833 2.65862L12.4333 7.42529H17.4333C17.6315 7.41779 17.8268 7.47541 17.9892 7.58932C18.1516 7.70324 18.2723 7.86719 18.3327 8.05614C18.3932 8.24508 18.3902 8.44862 18.324 8.63567C18.2579 8.82271 18.1324 8.98297 17.9666 9.09196L13.9083 12.0336L15.4583 16.8086C15.5196 16.9905 15.5212 17.1872 15.4627 17.3701C15.4043 17.5529 15.2889 17.7122 15.1335 17.8249C14.9781 17.9375 14.7907 17.9975 14.5988 17.996C14.4068 17.9946 14.2204 17.9319 14.0666 17.817L9.99998 14.842L5.94164 17.792C5.7879 17.9069 5.60145 17.9696 5.40951 17.971C5.21758 17.9725 5.03022 17.9125 4.87479 17.7999C4.71936 17.6872 4.604 17.5279 4.54557 17.3451C4.48713 17.1622 4.48868 16.9655 4.54998 16.7836L6.09998 12.0086L2.04164 9.06696C1.87588 8.95797 1.75035 8.79771 1.68424 8.61067C1.61813 8.42362 1.61508 8.22008 1.67554 8.03114C1.736 7.84219 1.85666 7.67824 2.01907 7.56432C2.18149 7.45041 2.37673 7.39279 2.57498 7.40029H7.57498L9.16664 2.65862Z" fill="#FBAD39"/>
                                             </svg>                                            
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="content__rating-star" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16664 2.65862C9.22421 2.47609 9.33846 2.31666 9.49281 2.20349C9.64717 2.09031 9.83358 2.0293 10.025 2.0293C10.2164 2.0293 10.4028 2.09031 10.5571 2.20349C10.7115 2.31666 10.8257 2.47609 10.8833 2.65862L12.4333 7.42529H17.4333C17.6315 7.41779 17.8268 7.47541 17.9892 7.58932C18.1516 7.70324 18.2723 7.86719 18.3327 8.05614C18.3932 8.24508 18.3902 8.44862 18.324 8.63567C18.2579 8.82271 18.1324 8.98297 17.9666 9.09196L13.9083 12.0336L15.4583 16.8086C15.5196 16.9905 15.5212 17.1872 15.4627 17.3701C15.4043 17.5529 15.2889 17.7122 15.1335 17.8249C14.9781 17.9375 14.7907 17.9975 14.5988 17.996C14.4068 17.9946 14.2204 17.9319 14.0666 17.817L9.99998 14.842L5.94164 17.792C5.7879 17.9069 5.60145 17.9696 5.40951 17.971C5.21758 17.9725 5.03022 17.9125 4.87479 17.7999C4.71936 17.6872 4.604 17.5279 4.54557 17.3451C4.48713 17.1622 4.48868 16.9655 4.54998 16.7836L6.09998 12.0086L2.04164 9.06696C1.87588 8.95797 1.75035 8.79771 1.68424 8.61067C1.61813 8.42362 1.61508 8.22008 1.67554 8.03114C1.736 7.84219 1.85666 7.67824 2.01907 7.56432C2.18149 7.45041 2.37673 7.39279 2.57498 7.40029H7.57498L9.16664 2.65862Z" fill="#FBAD39"/>
                                             </svg>                                            
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="content__rating-star" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16664 2.65862C9.22421 2.47609 9.33846 2.31666 9.49281 2.20349C9.64717 2.09031 9.83358 2.0293 10.025 2.0293C10.2164 2.0293 10.4028 2.09031 10.5571 2.20349C10.7115 2.31666 10.8257 2.47609 10.8833 2.65862L12.4333 7.42529H17.4333C17.6315 7.41779 17.8268 7.47541 17.9892 7.58932C18.1516 7.70324 18.2723 7.86719 18.3327 8.05614C18.3932 8.24508 18.3902 8.44862 18.324 8.63567C18.2579 8.82271 18.1324 8.98297 17.9666 9.09196L13.9083 12.0336L15.4583 16.8086C15.5196 16.9905 15.5212 17.1872 15.4627 17.3701C15.4043 17.5529 15.2889 17.7122 15.1335 17.8249C14.9781 17.9375 14.7907 17.9975 14.5988 17.996C14.4068 17.9946 14.2204 17.9319 14.0666 17.817L9.99998 14.842L5.94164 17.792C5.7879 17.9069 5.60145 17.9696 5.40951 17.971C5.21758 17.9725 5.03022 17.9125 4.87479 17.7999C4.71936 17.6872 4.604 17.5279 4.54557 17.3451C4.48713 17.1622 4.48868 16.9655 4.54998 16.7836L6.09998 12.0086L2.04164 9.06696C1.87588 8.95797 1.75035 8.79771 1.68424 8.61067C1.61813 8.42362 1.61508 8.22008 1.67554 8.03114C1.736 7.84219 1.85666 7.67824 2.01907 7.56432C2.18149 7.45041 2.37673 7.39279 2.57498 7.40029H7.57498L9.16664 2.65862Z" fill="#FBAD39"/>
                                             </svg>                                            
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="content__rating-star" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16664 2.65862C9.22421 2.47609 9.33846 2.31666 9.49281 2.20349C9.64717 2.09031 9.83358 2.0293 10.025 2.0293C10.2164 2.0293 10.4028 2.09031 10.5571 2.20349C10.7115 2.31666 10.8257 2.47609 10.8833 2.65862L12.4333 7.42529H17.4333C17.6315 7.41779 17.8268 7.47541 17.9892 7.58932C18.1516 7.70324 18.2723 7.86719 18.3327 8.05614C18.3932 8.24508 18.3902 8.44862 18.324 8.63567C18.2579 8.82271 18.1324 8.98297 17.9666 9.09196L13.9083 12.0336L15.4583 16.8086C15.5196 16.9905 15.5212 17.1872 15.4627 17.3701C15.4043 17.5529 15.2889 17.7122 15.1335 17.8249C14.9781 17.9375 14.7907 17.9975 14.5988 17.996C14.4068 17.9946 14.2204 17.9319 14.0666 17.817L9.99998 14.842L5.94164 17.792C5.7879 17.9069 5.60145 17.9696 5.40951 17.971C5.21758 17.9725 5.03022 17.9125 4.87479 17.7999C4.71936 17.6872 4.604 17.5279 4.54557 17.3451C4.48713 17.1622 4.48868 16.9655 4.54998 16.7836L6.09998 12.0086L2.04164 9.06696C1.87588 8.95797 1.75035 8.79771 1.68424 8.61067C1.61813 8.42362 1.61508 8.22008 1.67554 8.03114C1.736 7.84219 1.85666 7.67824 2.01907 7.56432C2.18149 7.45041 2.37673 7.39279 2.57498 7.40029H7.57498L9.16664 2.65862Z" fill="#FBAD39"/>
                                             </svg>     
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="content__rating-star" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16664 2.65862C9.2242 2.47609 9.33846 2.31666 9.49281 2.20349C9.64717 2.09031 9.83358 2.0293 10.025 2.0293C10.2164 2.0293 10.4028 2.09031 10.5571 2.20349C10.7115 2.31666 10.8257 2.47609 10.8833 2.65862L12.4333 7.42529H17.4333C17.6315 7.41779 17.8268 7.47541 17.9892 7.58932C18.1516 7.70324 18.2723 7.86719 18.3327 8.05614C18.3932 8.24508 18.3902 8.44862 18.324 8.63567C18.2579 8.82271 18.1324 8.98297 17.9666 9.09196L13.9083 12.0336L15.4583 16.8086C15.5196 16.9905 15.5212 17.1872 15.4627 17.3701C15.4043 17.5529 15.2889 17.7122 15.1335 17.8249C14.9781 17.9375 14.7907 17.9975 14.5988 17.996C14.4068 17.9946 14.2204 17.9319 14.0666 17.817L9.99998 14.842L5.94164 17.792C5.7879 17.9069 5.60145 17.9696 5.40951 17.971C5.21758 17.9725 5.03022 17.9125 4.87479 17.7999C4.71936 17.6872 4.604 17.5279 4.54557 17.3451C4.48713 17.1622 4.48868 16.9655 4.54998 16.7836L6.09998 12.0086L2.04164 9.06696C1.87588 8.95797 1.75035 8.79771 1.68424 8.61067C1.61813 8.42363 1.61508 8.22008 1.67554 8.03114C1.736 7.84219 1.85666 7.67824 2.01907 7.56432C2.18149 7.45041 2.37673 7.39279 2.57498 7.40029H7.57498L9.16664 2.65862Z" stroke="#C3D4E9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                             </svg>                                                                                   
                                         </span>
@@ -398,19 +411,19 @@
                                                             19 July 2022
                                                         </span>
                                                         <span class="content__rating">
-                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <svg class="content__rating-star" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16664 2.65862C9.22421 2.47609 9.33846 2.31666 9.49281 2.20349C9.64717 2.09031 9.83358 2.0293 10.025 2.0293C10.2164 2.0293 10.4028 2.09031 10.5571 2.20349C10.7115 2.31666 10.8257 2.47609 10.8833 2.65862L12.4333 7.42529H17.4333C17.6315 7.41779 17.8268 7.47541 17.9892 7.58932C18.1516 7.70324 18.2723 7.86719 18.3327 8.05614C18.3932 8.24508 18.3902 8.44862 18.324 8.63567C18.2579 8.82271 18.1324 8.98297 17.9666 9.09196L13.9083 12.0336L15.4583 16.8086C15.5196 16.9905 15.5212 17.1872 15.4627 17.3701C15.4043 17.5529 15.2889 17.7122 15.1335 17.8249C14.9781 17.9375 14.7907 17.9975 14.5988 17.996C14.4068 17.9946 14.2204 17.9319 14.0666 17.817L9.99998 14.842L5.94164 17.792C5.7879 17.9069 5.60145 17.9696 5.40951 17.971C5.21758 17.9725 5.03022 17.9125 4.87479 17.7999C4.71936 17.6872 4.604 17.5279 4.54557 17.3451C4.48713 17.1622 4.48868 16.9655 4.54998 16.7836L6.09998 12.0086L2.04164 9.06696C1.87588 8.95797 1.75035 8.79771 1.68424 8.61067C1.61813 8.42362 1.61508 8.22008 1.67554 8.03114C1.736 7.84219 1.85666 7.67824 2.01907 7.56432C2.18149 7.45041 2.37673 7.39279 2.57498 7.40029H7.57498L9.16664 2.65862Z" fill="#FBAD39"/>
                                                             </svg>                                            
-                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <svg class="content__rating-star" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16664 2.65862C9.22421 2.47609 9.33846 2.31666 9.49281 2.20349C9.64717 2.09031 9.83358 2.0293 10.025 2.0293C10.2164 2.0293 10.4028 2.09031 10.5571 2.20349C10.7115 2.31666 10.8257 2.47609 10.8833 2.65862L12.4333 7.42529H17.4333C17.6315 7.41779 17.8268 7.47541 17.9892 7.58932C18.1516 7.70324 18.2723 7.86719 18.3327 8.05614C18.3932 8.24508 18.3902 8.44862 18.324 8.63567C18.2579 8.82271 18.1324 8.98297 17.9666 9.09196L13.9083 12.0336L15.4583 16.8086C15.5196 16.9905 15.5212 17.1872 15.4627 17.3701C15.4043 17.5529 15.2889 17.7122 15.1335 17.8249C14.9781 17.9375 14.7907 17.9975 14.5988 17.996C14.4068 17.9946 14.2204 17.9319 14.0666 17.817L9.99998 14.842L5.94164 17.792C5.7879 17.9069 5.60145 17.9696 5.40951 17.971C5.21758 17.9725 5.03022 17.9125 4.87479 17.7999C4.71936 17.6872 4.604 17.5279 4.54557 17.3451C4.48713 17.1622 4.48868 16.9655 4.54998 16.7836L6.09998 12.0086L2.04164 9.06696C1.87588 8.95797 1.75035 8.79771 1.68424 8.61067C1.61813 8.42362 1.61508 8.22008 1.67554 8.03114C1.736 7.84219 1.85666 7.67824 2.01907 7.56432C2.18149 7.45041 2.37673 7.39279 2.57498 7.40029H7.57498L9.16664 2.65862Z" fill="#FBAD39"/>
                                                             </svg>                                            
-                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <svg class="content__rating-star" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16664 2.65862C9.22421 2.47609 9.33846 2.31666 9.49281 2.20349C9.64717 2.09031 9.83358 2.0293 10.025 2.0293C10.2164 2.0293 10.4028 2.09031 10.5571 2.20349C10.7115 2.31666 10.8257 2.47609 10.8833 2.65862L12.4333 7.42529H17.4333C17.6315 7.41779 17.8268 7.47541 17.9892 7.58932C18.1516 7.70324 18.2723 7.86719 18.3327 8.05614C18.3932 8.24508 18.3902 8.44862 18.324 8.63567C18.2579 8.82271 18.1324 8.98297 17.9666 9.09196L13.9083 12.0336L15.4583 16.8086C15.5196 16.9905 15.5212 17.1872 15.4627 17.3701C15.4043 17.5529 15.2889 17.7122 15.1335 17.8249C14.9781 17.9375 14.7907 17.9975 14.5988 17.996C14.4068 17.9946 14.2204 17.9319 14.0666 17.817L9.99998 14.842L5.94164 17.792C5.7879 17.9069 5.60145 17.9696 5.40951 17.971C5.21758 17.9725 5.03022 17.9125 4.87479 17.7999C4.71936 17.6872 4.604 17.5279 4.54557 17.3451C4.48713 17.1622 4.48868 16.9655 4.54998 16.7836L6.09998 12.0086L2.04164 9.06696C1.87588 8.95797 1.75035 8.79771 1.68424 8.61067C1.61813 8.42362 1.61508 8.22008 1.67554 8.03114C1.736 7.84219 1.85666 7.67824 2.01907 7.56432C2.18149 7.45041 2.37673 7.39279 2.57498 7.40029H7.57498L9.16664 2.65862Z" fill="#FBAD39"/>
                                                             </svg>                                            
-                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <svg class="content__rating-star" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16664 2.65862C9.22421 2.47609 9.33846 2.31666 9.49281 2.20349C9.64717 2.09031 9.83358 2.0293 10.025 2.0293C10.2164 2.0293 10.4028 2.09031 10.5571 2.20349C10.7115 2.31666 10.8257 2.47609 10.8833 2.65862L12.4333 7.42529H17.4333C17.6315 7.41779 17.8268 7.47541 17.9892 7.58932C18.1516 7.70324 18.2723 7.86719 18.3327 8.05614C18.3932 8.24508 18.3902 8.44862 18.324 8.63567C18.2579 8.82271 18.1324 8.98297 17.9666 9.09196L13.9083 12.0336L15.4583 16.8086C15.5196 16.9905 15.5212 17.1872 15.4627 17.3701C15.4043 17.5529 15.2889 17.7122 15.1335 17.8249C14.9781 17.9375 14.7907 17.9975 14.5988 17.996C14.4068 17.9946 14.2204 17.9319 14.0666 17.817L9.99998 14.842L5.94164 17.792C5.7879 17.9069 5.60145 17.9696 5.40951 17.971C5.21758 17.9725 5.03022 17.9125 4.87479 17.7999C4.71936 17.6872 4.604 17.5279 4.54557 17.3451C4.48713 17.1622 4.48868 16.9655 4.54998 16.7836L6.09998 12.0086L2.04164 9.06696C1.87588 8.95797 1.75035 8.79771 1.68424 8.61067C1.61813 8.42362 1.61508 8.22008 1.67554 8.03114C1.736 7.84219 1.85666 7.67824 2.01907 7.56432C2.18149 7.45041 2.37673 7.39279 2.57498 7.40029H7.57498L9.16664 2.65862Z" fill="#FBAD39"/>
                                                             </svg>     
-                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <svg class="content__rating-star" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16664 2.65862C9.2242 2.47609 9.33846 2.31666 9.49281 2.20349C9.64717 2.09031 9.83358 2.0293 10.025 2.0293C10.2164 2.0293 10.4028 2.09031 10.5571 2.20349C10.7115 2.31666 10.8257 2.47609 10.8833 2.65862L12.4333 7.42529H17.4333C17.6315 7.41779 17.8268 7.47541 17.9892 7.58932C18.1516 7.70324 18.2723 7.86719 18.3327 8.05614C18.3932 8.24508 18.3902 8.44862 18.324 8.63567C18.2579 8.82271 18.1324 8.98297 17.9666 9.09196L13.9083 12.0336L15.4583 16.8086C15.5196 16.9905 15.5212 17.1872 15.4627 17.3701C15.4043 17.5529 15.2889 17.7122 15.1335 17.8249C14.9781 17.9375 14.7907 17.9975 14.5988 17.996C14.4068 17.9946 14.2204 17.9319 14.0666 17.817L9.99998 14.842L5.94164 17.792C5.7879 17.9069 5.60145 17.9696 5.40951 17.971C5.21758 17.9725 5.03022 17.9125 4.87479 17.7999C4.71936 17.6872 4.604 17.5279 4.54557 17.3451C4.48713 17.1622 4.48868 16.9655 4.54998 16.7836L6.09998 12.0086L2.04164 9.06696C1.87588 8.95797 1.75035 8.79771 1.68424 8.61067C1.61813 8.42363 1.61508 8.22008 1.67554 8.03114C1.736 7.84219 1.85666 7.67824 2.01907 7.56432C2.18149 7.45041 2.37673 7.39279 2.57498 7.40029H7.57498L9.16664 2.65862Z" stroke="#C3D4E9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                                             </svg>                                                                                   
                                                         </span>
@@ -872,69 +885,71 @@
             </section>
         </div>
         <!-- footer -->
-        <footer class="footer wrapper-content">
-            <!-- footer primary wrap -->
-            <div class="footer__primary-wrap">
-                <div class="footer__primary-wrap_heading-wrap">
-                    <span class="footer__heading">
-                        morent
-                    </span>
-                    <p class="footer__heading_dscr">
-                        Our vision is to provide convenience 
-                        <br>
-                        and help increase your sales business.
-                    </p>
-                </div>
-                <div class="footer__primary-wrap_contacts-wrap">
-                    <div class="footer__contacts_wrap">
-                        <h5 class="footer__contacts_title">
-                            About
-                        </h5>
-                        <div class="footer__contacts_links-wrap">
-                            <a href="#" class="footer__contacts_link">How it works</a>
-                            <a href="#" class="footer__contacts_link">Featured</a>
-                            <a href="#" class="footer__contacts_link">Partnership</a>
-                            <a href="#" class="footer__contacts_link">Bussiness Relation</a>
+        <footer class="footer">
+            <div class="wrapper-content">
+                <!-- footer primary wrap -->
+                <div class="footer__primary-wrap">
+                    <div class="footer__primary-wrap_heading-wrap">
+                        <span class="footer__heading">
+                            morent
+                        </span>
+                        <p class="footer__heading_dscr">
+                            Our vision is to provide convenience 
+                            <br>
+                            and help increase your sales business.
+                        </p>
+                    </div>
+                    <div class="footer__primary-wrap_contacts-wrap">
+                        <div class="footer__contacts_wrap">
+                            <h5 class="footer__contacts_title">
+                                About
+                            </h5>
+                            <div class="footer__contacts_links-wrap">
+                                <a href="#" class="footer__contacts_link">How it works</a>
+                                <a href="#" class="footer__contacts_link">Featured</a>
+                                <a href="#" class="footer__contacts_link">Partnership</a>
+                                <a href="#" class="footer__contacts_link">Bussiness Relation</a>
+                            </div>
+                        </div>
+                        <div class="footer__contacts_wrap">
+                            <h5 class="footer__contacts_title">
+                                Community
+                            </h5>
+                            <div class="footer__contacts_links-wrap">
+                                <a href="#" class="footer__contacts_link">Events</a>
+                                <a href="#" class="footer__contacts_link">Blog</a>
+                                <a href="#" class="footer__contacts_link">Podcast</a>
+                                <a href="#" class="footer__contacts_link">Invite a friend</a>
+                            </div>
+                        </div>
+                        <div class="footer__contacts_wrap">
+                            <h5 class="footer__contacts_title">
+                                Socials
+                            </h5>
+                            <div class="footer__contacts_links-wrap">
+                                <a href="#" class="footer__contacts_link">Discord</a>
+                                <a href="#" class="footer__contacts_link">Instagram</a>
+                                <a href="#" class="footer__contacts_link">Twitter</a>
+                                <a href="#" class="footer__contacts_link">Facebook</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="footer__contacts_wrap">
-                        <h5 class="footer__contacts_title">
-                            Community
-                        </h5>
-                        <div class="footer__contacts_links-wrap">
-                            <a href="#" class="footer__contacts_link">Events</a>
-                            <a href="#" class="footer__contacts_link">Blog</a>
-                            <a href="#" class="footer__contacts_link">Podcast</a>
-                            <a href="#" class="footer__contacts_link">Invite a friend</a>
-                        </div>
-                    </div>
-                    <div class="footer__contacts_wrap">
-                        <h5 class="footer__contacts_title">
-                            Socials
-                        </h5>
-                        <div class="footer__contacts_links-wrap">
-                            <a href="#" class="footer__contacts_link">Discord</a>
-                            <a href="#" class="footer__contacts_link">Instagram</a>
-                            <a href="#" class="footer__contacts_link">Twitter</a>
-                            <a href="#" class="footer__contacts_link">Facebook</a>
-                        </div>
-                    </div>
                 </div>
-            </div>
-            <!-- footer secondary wrap -->
-            <div class="footer__secondary-wrap">
-                <div class="footer__secondary-wrap_primary-items-wrap">
-                    <span class="footer__secondary-wrap_primary-item">
-                        &copy;2022 MORENT. All rights reserved
-                    </span>
-                </div>
-                <div class="footer__secondary-wrap_secondary-items-wrap">
-                    <span class="footer__secondary-wrap_secondary-item">
-                        Privacy & Policy
-                    </span>
-                    <span class="footer__secondary-wrap_secondary-item">
-                        Terms & Condition
-                    </span>
+                <!-- footer secondary wrap -->
+                <div class="footer__secondary-wrap">
+                    <div class="footer__secondary-wrap_primary-items-wrap">
+                        <span class="footer__secondary-wrap_primary-item">
+                            Privacy & Policy
+                        </span>
+                        <span class="footer__secondary-wrap_primary-item">
+                            Terms & Condition
+                        </span>
+                    </div>
+                    <div class="footer__secondary-wrap_secondary-items-wrap">
+                        <span class="footer__secondary-wrap_secondary-item">
+                            &copy;2022 MORENT. All rights reserved
+                        </span>
+                    </div>
                 </div>
             </div>
         </footer>
