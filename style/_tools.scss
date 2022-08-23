@@ -1,0 +1,54 @@
+$colorMain: #3d5278;
+$colorAccent: #3563E9;
+$colorLight: #90A3BF;
+$colorFooter: #131313;
+$backgroundMain: #F6F7F9;
+
+@mixin title {
+    font-size: 2.3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    @media (max-width: 991px) {
+        font-size: 2rem;
+    }
+}
+@mixin title-elements {
+    color: $colorLight;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+@mixin title-20 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    @media (max-width: 991px) {
+        font-size: 1.3rem;
+    }
+}
+@mixin content-blocks {
+    padding: 25px;
+    border-radius: 10px;
+    @media (max-width: 991px) {
+        padding: 20px;
+    }
+    @media (max-width: 575px) {
+        padding: 15px;
+    }
+}
+@mixin border($property) {
+    #{$property}: 1px solid rgba(#C3D4E9, .4);
+}
+@mixin flex-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin footer-txt {
+    color: rgba($colorFooter, .6);
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 2.2;
+    @media (max-width: 575px) {
+        color: $colorLight;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+}

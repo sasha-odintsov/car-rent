@@ -1,0 +1,100 @@
+// *** header *** //
+.header {
+    padding: 40px 0;
+    @include border(border-bottom);
+    
+    .header__content {
+        @include flex-space-between;
+        flex-direction: row-reverse;
+        
+        // *** header primary wrap *** //
+        .header__primary-wrap {
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 0;
+
+            .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(61, 82, 120)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+            }
+            .navbar-toggler:focus {
+                box-shadow: none;
+            }
+    
+            // *** header user settings *** //
+            .header__user-settings {
+                .header__user-settings-btn {
+                    background-color: #fff;
+                    border-radius: 50%;
+                    padding: 10px;
+                    margin-right: 20px;
+                    @include border(border);
+                    position: relative;
+                }
+                .user-settings-btn-notification::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    border-radius: 50%;
+                    background-color: #FF4423;
+                    width: 12px;
+                    height: 12px;
+                    z-index: 1;
+                }
+            }
+            .header__user-img-wrap {
+                width: 45px;
+                
+                .header__user-img {
+                    width: 100%;
+                }
+            }
+        }
+
+        // *** header secondary wrap *** //
+        .header__secondary-wrap {
+            @include flex-space-between;
+            
+            // *** header logo *** //
+            .header__logo-wrap {
+                margin: 0 65px 0 30px;
+                
+                .header__logo {
+                    @include title;
+                    color: $colorAccent;
+                    text-transform: uppercase;
+                }
+            }
+        
+            // *** header input *** //
+            .input-group {
+                width: 500px;
+            }
+            .form-control::placeholder {
+                color: $colorMain;
+                font-weight: 500;
+            }
+            .header__input, .header__input-icon, .header__input-button {
+                @include border(border);
+            }
+            .header__input {
+                border-left: none;
+                border-right: none;
+            }
+            .header__input-icon, .header__input-button {
+                border-radius: 30px;
+                padding: 10px 20px;
+            }
+            .header__input-button {
+                border-left: none;
+
+                &:hover {
+                    background-color: $colorAccent;
+                }
+                &:hover .header__input-button-icon, &:focus .header__input-button-icon {
+                    stroke: #fff;
+                }
+            }
+        }
+    }
+}
