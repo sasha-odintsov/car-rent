@@ -996,13 +996,6 @@ body {
 }
 
 @media screen and (max-width: 991px) {
-  .main .aside {
-    max-width: 300px;
-    min-width: 300px;
-  }
-  .main .aside .aside__wrap .aside__check {
-    margin-bottom: 10px;
-  }
   .wrapper-content {
     margin: 0 25px;
   }
@@ -1033,6 +1026,13 @@ body {
   }
   .header .header__content .header__secondary-wrap .header__logo-wrap {
     margin-left: 0;
+  }
+  .main .aside {
+    max-width: 300px;
+    min-width: 300px;
+  }
+  .main .aside .aside__wrap .aside__check {
+    margin-bottom: 10px;
   }
   .content .content__wrap .content__gallery .gallery__item-preview .gallery__dsrc .gallery__title {
     font-size: 1.4rem;
@@ -1147,18 +1147,15 @@ body {
   html {
     font-size: 12px;
   }
-  .main .aside {
-    max-width: 250px;
-    min-width: 250px;
-  }
-  .main .aside .aside__wrap {
-    margin-bottom: 30px;
-  }
-  .main .aside .aside__wrap .aside__title {
-    margin-bottom: 20px;
-  }
   .header .header__content .header__primary-wrap .header__user-img-wrap {
     width: 30px;
+  }
+  .header .header__content .header__primary-wrap .header__user-settings .header__user-settings-btn {
+    padding: 7px;
+  }
+  .header .header__content .header__primary-wrap .header__user-settings .header__user-settings-btn > * {
+    width: 20px;
+    height: 20px;
   }
   .header .header__content .header__secondary-wrap {
     display: block;
@@ -1190,6 +1187,16 @@ body {
   }
   .header .header__content .header__secondary-wrap .input-group > :not(:first-child):not(.invalid-tooltip) {
     border-radius: 10px;
+  }
+  .main .aside {
+    max-width: 250px;
+    min-width: 250px;
+  }
+  .main .aside .aside__wrap {
+    margin-bottom: 30px;
+  }
+  .main .aside .aside__wrap .aside__title {
+    margin-bottom: 20px;
   }
   .content {
     overflow: hidden;
