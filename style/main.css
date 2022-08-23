@@ -1136,11 +1136,11 @@ body {
     content: "";
     position: absolute;
     right: -30px;
-    height: 90%;
-    width: 30%;
+    height: 89%;
+    width: 28%;
     bottom: 0px;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(221, 221, 221, 0)), to(white));
-    background: linear-gradient(90deg, rgba(221, 221, 221, 0) 0%, white 100%);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(240, 240, 240, 0)), to(white));
+    background: linear-gradient(90deg, rgba(240, 240, 240, 0) 0%, white 100%);
   }
   .main .content .content__catalogue-recomendation {
     -ms-grid-column: 1;
