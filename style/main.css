@@ -208,51 +208,33 @@
 .main .aside .aside__wrap #price-range::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 28px;
+  height: 28px;
   background-color: #3563E9;
   cursor: pointer;
-  outline: 4px solid #fff;
+  border: 4px solid #fff;
   border-radius: 50%;
   -webkit-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
 }
 
 .main .aside .aside__wrap #price-range::-webkit-slider-thumb:active {
-  outline: 4px solid #e5f0f3;
-  border-radius: 50%;
+  border-color: #e5f0f3;
 }
 
 .main .aside .aside__wrap #price-range::-moz-range-thumb {
-  width: 20px;
-  height: 20px;
+  width: 28px;
+  height: 28px;
   background-color: #3563E9;
   cursor: pointer;
-  outline: 4px solid #fff;
+  border: 4px solid #fff;
   border-radius: 50%;
   -webkit-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
 }
 
 .main .aside .aside__wrap #price-range::-moz-range-thumb:active {
-  outline: 4px solid #e5f0f3;
-  border-radius: 50%;
-}
-
-.main .aside .aside__wrap #price-range::-ms-thumb {
-  width: 20px;
-  height: 20px;
-  background-color: #3563E9;
-  cursor: pointer;
-  outline: 4px solid #fff;
-  border-radius: 50%;
-  -webkit-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
-}
-
-.main .aside .aside__wrap #price-range::-ms-thumb:active {
-  outline: 4px solid #e5f0f3;
-  border-radius: 50%;
+  border-color: #e5f0f3;
 }
 
 .main .content {
@@ -1126,21 +1108,21 @@ body {
     -ms-grid-row: 4;
     -ms-grid-row-span: 1;
     grid-row: 4 / 5;
-    position: relative;
   }
   .main .content .content__catalogue .content__catalogue-item-wrap {
+    position: relative;
     -ms-grid-columns: (65%)[2];
         grid-template-columns: repeat(2, 65%);
   }
-  .main .content .content__catalogue .content__catalogue-item-wrap:after {
+  .main .content .content__catalogue .content__catalogue-item-wrap .content__catalogue-item:after {
     content: "";
     position: absolute;
     right: -30px;
-    height: 89%;
-    width: 28%;
+    height: 100%;
+    width: 25%;
     bottom: 0px;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(240, 240, 240, 0)), to(white));
-    background: linear-gradient(90deg, rgba(240, 240, 240, 0) 0%, white 100%);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(245, 245, 245, 0)), to(white));
+    background: linear-gradient(90deg, rgba(245, 245, 245, 0) 0%, white 100%);
   }
   .main .content .content__catalogue-recomendation {
     -ms-grid-column: 1;
