@@ -63,6 +63,7 @@
                     @include title;
                     color: $colorAccent;
                     text-transform: uppercase;
+                    text-decoration: none;
                 }
             }
         
@@ -79,14 +80,20 @@
             }
             .header__input {
                 border-left: none;
-                border-right: none;
+            }
+            .input-group>:not(:first-child):not(.form-control):not(.valid-feedback):not(.invalid-tooltip) {
+                border-radius: 30px;
+            }
+            .input-group>:not(:first-child):not(.invalid-tooltip) {
+                border-radius: 30px;
             }
             .header__input-icon, .header__input-button {
                 border-radius: 30px;
                 padding: 10px 20px;
             }
             .header__input-button {
-                border-left: none;
+                display: none;
+                transition: all 100ms ease-in;
 
                 &:hover {
                     background-color: $colorAccent;

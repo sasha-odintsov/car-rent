@@ -127,7 +127,8 @@
             grid-row: 1 / 2;
     
             .gallery__item-preview {
-                background: url(../img/bg.jpg);
+                background-image: url(../img/View1.png);
+                background-position: 50% 50%;
                 background-repeat: no-repeat;
                 background-size: cover;
                 @include content-blocks;
@@ -136,8 +137,14 @@
     
                 .gallery__dsrc {
                     color: #fff;
-                    margin-bottom: 50px;
-                    
+                    margin-bottom: 200px;
+
+                    .gallery__title, .gallery__txt {
+                        text-shadow: 0px 0px 1px rgba($colorMain, .7),
+                        0px 0px 2px rgba($colorMain, .7),
+                        0px 0px 3px rgba($colorMain, .7),
+                        0px 0px 3px rgba($colorMain, .7)
+                    }
                     .gallery__title {
                         @include title;
                         margin-bottom: 15px;
@@ -147,14 +154,6 @@
                         font-size: 1.1rem;
                         line-height: 1.5;
                         width: 60%;
-                    }
-                }
-                .gallery__preview-img-wrap {
-                    width: 80%;
-                    margin: 0 auto;
-    
-                    .gallery__preview-img {
-                        width: 100%;
                     }
                 }
             }
@@ -170,11 +169,25 @@
                 grid-column: 3 / 4;
                 grid-row: 4 / 5;
             }
+            .gallery__checkbox {
+                display: none;
+
+                &:checked + .gallery__img-wrap {
+                    border-radius: 10px;
+                    border: 2px solid $colorAccent;
+                }
+                &:checked + .gallery__img-wrap .gallery__img {
+                    transform: scale(.9);
+                }
+            }
             .gallery__img-wrap {
+                cursor: pointer;
                 width: 100%;
+                border: 2px solid transparent;
                 
                 .gallery__img {
                     width: 100%;
+                    border-radius: 10px;
                 }
             }
         }
@@ -371,7 +384,7 @@
                     background-color: transparent;
                 }
             }
-            .content__catalogue-item-wrap {
+            .content__catalogue-item-wrap-secondary {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 grid-gap: 30px;
